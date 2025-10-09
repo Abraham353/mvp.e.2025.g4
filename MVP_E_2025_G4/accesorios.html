@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios Especializados | NUCLEUS GEAR PE</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>NUCLEUS GEAR PE</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="mouses.html">Mouses</a></li>
+                    <li><a href="teclados.html">Teclados</a></li>
+                    <li><a href="auriculares.html">Auriculares</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <h3 class="section-title">Componentes y Personalización Avanzada ⚙️</h3>
+        
+        <section class="product-grid">
+            
+            <div class="product-card">
+                <img src="mousepad_skypad.jpg" alt="Mousepad SkyPAD 3.0">
+                <div class="product-info">
+                    <h4>SkyPAD 3.0 XL (Vidrio, Ultra Velocidad)</h4>
+                    <p class="brand">SkyPAD</p>
+                    <p class="price">S/ 389.00</p>
+                    <a href="#modal-compra" class="btn-buy">Comprar Ahora</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="skates_esptiger_ice.jpg" alt="Skates Esptiger Ice">
+                <div class="product-info">
+                    <h4>Mouse Skates Esptiger ICE V2 (Todos los modelos)</h4>
+                    <p class="brand">Esptiger</p>
+                    <p class="price">S/ 69.00</p>
+                    <a href="#modal-compra" class="btn-buy">Comprar Ahora</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="switches_everglide_v3.jpg" alt="Switches Everglide Aqua King V3">
+                <div class="product-info">
+                    <h4>Everglide V3 Switches (Variantes Linear/Tactile)</h4>
+                    <p class="brand">Everglide</p>
+                    <p class="price">S/ 99.00</p>
+                    <a href="#modal-compra" class="btn-buy">Comprar Ahora</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="cable_custom_iqk.jpg" alt="Cable Custom IQK">
+                <div class="product-info">
+                    <h4>Cable Coiled Aviator (Conector ATK)</h4>
+                    <p class="brand">IQK / ATK</p>
+                    <p class="price">S/ 169.00</p>
+                    <a href="#modal-compra" class="btn-buy">Comprar Ahora</a>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 NUCLEUS GEAR PE. Periféricos de nicho. Precios en Soles Peruanos (S/).</p>
+        </div>
+    </footer>
+    
+    <div id="modal-compra" class="modal-overlay">
+        <a href="#" class="modal-close">&times;</a> 
+        <div class="modal-content">
+            <h4>Solicitud de Pedido / Cotización</h4>
+            <p>¡Gracias por tu interés! Completa el formulario y nos contactaremos contigo para confirmar stock y detalles de envío a Perú.</p>
+            
+            <form action="mailto:tu-correo@ejemplo.com" method="post" enctype="text/plain">
+                <label for="producto">Producto de Interés:</label>
+                <input type="text" id="producto" name="producto" value="[Indicar Producto Aquí]" required>
+
+                <label for="nombre">Tu Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Tu Email o Teléfono (para contacto):</label>
+                <input type="text" id="contacto" name="contacto" required>
+                
+                <label for="ciudad">Ciudad en Perú (Ej: Lima, Arequipa):</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+                
+                <input type="submit" value="Enviar Solicitud de Compra" class="btn-submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

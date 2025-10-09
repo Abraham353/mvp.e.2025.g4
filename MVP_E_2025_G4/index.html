@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUCLEUS GEAR PE | Periféricos de Alto Rendimiento en Perú</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>NUCLEUS GEAR PE</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="mouses.html">Mouses</a></li>
+                    <li><a href="teclados.html">Teclados</a></li>
+                    <li><a href="auriculares.html">Auriculares</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        
+        <section class="hero">
+            <h2>All THAT YOU WANT</h2>
+            <p>Distribuidores Oficiales</p>
+            <a href="#productos-destacados" class="btn-primary">Explora la Selección</a>
+        </section>
+
+        <section id="productos-destacados" class="product-grid">
+            
+            <h3 class="section-title">Nuestra Selección Elite 🇵🇪</h3>
+            
+            <div class="product-card">
+                <img src="Lamzu_mouse.jpg" alt="Mouse Lamzu Thorn">
+                <div class="product-info">
+                    <h4>Mouse Lamzu Thorn 4K (Ultraligero)</h4>
+                    <p class="brand">Lamzu</p>
+                    <p class="price">S/ 469.00</p>
+                    <a href="#modal-compra" class="btn-buy">Comprar Ahora</a> 
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="King_accesorio.jpg" alt="Switches Everglide Aqua King">
+                <div class="product-info">
+                    <h4>Switches Everglide Aqua King V3 (Lineales)</h4>
+                    <p class="brand">Everglide</p>
+                    <p class="price">S/ 99.00</p>
+                    <a href="#modal-compra" class="btn-buy">Comprar Ahora</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="Skypad_mousepad.jpg" alt="Mousepad SkyPAD 3.0">
+                <div class="product-info">
+                    <h4>SkyPAD 3.0 XL (Vidrio, Velocidad Pura)</h4>
+                    <p class="brand">SkyPAD</p>
+                    <p class="price">S/ 389.00</p>
+                    <a href="#modal-compra" class="btn-buy">Comprar Ahora</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="Esptiger_accesorio.jpg" alt="Skates Esptiger Ice">
+                <div class="product-info">
+                    <h4>Mouse Skates Esptiger ICE V2 (PTFE)</h4>
+                    <p class="brand">Esptiger</p>
+                    <p class="price">S/ 69.00</p>
+                    <a href="#modal-compra" class="btn-buy">Comprar Ahora</a>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 NUCLEUS GEAR PE. Periféricos de nicho. Precios en Soles Peruanos (S/).</p>
+        </div>
+    </footer>
+
+    <div id="modal-compra" class="modal-overlay">
+        <a href="#" class="modal-close">&times;</a> 
+        <div class="modal-content">
+            <h4>Solicitud de Pedido / Cotización</h4>
+            <p>¡Gracias por tu interés! Completa el formulario y nos contactaremos contigo para confirmar stock y detalles de envío a Perú.</p>
+            
+            <form action="mailto:tu-correo@ejemplo.com" method="post" enctype="text/plain">
+                <label for="producto">Producto de Interés:</label>
+                <input type="text" id="producto" name="producto" value="[Indicar Producto Aquí]" required>
+
+                <label for="nombre">Tu Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Tu Email o Teléfono (para contacto):</label>
+                <input type="text" id="contacto" name="contacto" required>
+                
+                <label for="ciudad">Ciudad en Perú (Ej: Lima, Arequipa):</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+                
+                <input type="submit" value="Enviar Solicitud de Compra" class="btn-submit">
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
