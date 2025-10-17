@@ -235,13 +235,13 @@ a {
     visibility: visible;
 }
 
-/* El contenido del formulario dentro del modal */
+/* CÓDIGO ACTUALIZADO */
 .modal-content {
     background-color: var(--color-tarjeta);
     color: var(--color-texto-claro);
     width: 90%;
     max-width: 500px;
-    margin: 10% auto;
+    margin: 1% auto; /* <--- HEMOS CAMBIADO ESTE VALOR DE 10% A 5% */
     padding: 30px;
     border-radius: 10px;
     position: relative;

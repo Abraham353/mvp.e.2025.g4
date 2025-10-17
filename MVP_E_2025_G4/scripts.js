@@ -57,3 +57,18 @@ function smoothScrollTo(targetElement, duration) {
 
     requestAnimationFrame(animation);
 }
+
+/**
+ * Función para preparar el modal de compra.
+ * Rellena automáticamente el nombre del producto en el formulario.
+ * @param {string} productName - El nombre del producto en el que se hizo clic.
+ */
+function prepareModal(productName) {
+    // Seleccionamos el campo de texto del producto dentro del modal
+    const productInput = document.querySelector('#modal-compra #producto');
+
+    // Si el campo de texto existe, actualizamos su valor con el nombre del producto
+    if (productInput) {
+        productInput.value = productName;
+    }
+}
