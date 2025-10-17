@@ -7,6 +7,7 @@
     --color-tarjeta: #1c1c1c; /* Gris oscuro para las tarjetas */
 }
 
+
 /* Estilos Generales */
 body {
     font-family: 'Roboto Mono', monospace, sans-serif; /* Fuente Monospaced para toque técnico */
@@ -14,6 +15,7 @@ body {
     color: var(--color-texto-claro);
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -68,19 +70,31 @@ a {
     color: var(--color-acento);
 }
 
+.header nav ul li a.active {
+    background-color: var(--color-principal); /* Fondo verde neón */
+    color: var(--color-fondo); /* Texto oscuro para contraste */
+    padding: 8px 15px; /* Espaciado interno para que parezca un botón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold;
+}
+
+.header nav ul li a.active:hover {
+    background-color: var(--color-acento); /* Cambia a color dorado al pasar el mouse */
+    color: var(--color-fondo);
+}
+
 /* Sección Hero */
 .hero {
     text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.8)), url('fondo_tecnico.jpg') no-repeat center center/cover;
-    margin-bottom: 50px;
+    padding: 120px 0px;
+    background: linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.8)), url('fondoinicio.png') no-repeat center center/cover;
+    margin-bottom: 40px;
 }
 
 .hero h2 {
-    font-size: 3em;
+    font-size: 5em;
     margin-bottom: 15px;
     color: white;
-    text-shadow: 0 0 15px var(--color-principal);
 }
 
 .hero p {
@@ -111,6 +125,7 @@ a {
 .section-title {
     text-align: center;
     font-size: 2.5em;
+    padding-top: 40px;
     margin-bottom: 40px;
     color: var(--color-principal);
 }
@@ -150,7 +165,7 @@ a {
 
 .product-info h4 {
     margin: 0 0 5px 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .product-info .brand {
@@ -294,4 +309,31 @@ a {
 
 .modal-close:hover {
     color: white;
+}
+
+/* Estilos para la franja verde de ancho completo */
+
+.seccion-elite {
+  background-color: rgba(0, 255, 127, 0.6); /* Puedes cambiar este código por tu tono de verde preferido */
+  width: 100%; /* Asegura que el fondo ocupe todo el ancho */
+  padding: 5px 0; /* Espacio vertical para que el texto respire. 25px arriba/abajo, 0 a los lados */
+  box-sizing: border-box; /* Importante para que el padding no afecte el ancho total */
+}
+
+.contenedor-texto {
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.seccion-elite h2 {
+  color: white; /* Color del texto */
+  margin: 0; /* Elimina márgenes por defecto del título para un mejor control */
+  font-size: 2.5rem; /* Tamaño de la letra. Puedes ajustarlo */
+  font-family: 'Montserrat', sans-serif; /* Ejemplo usando una fuente recomendada. ¡Cámbiala si usas otra! */
+}
+
+/* Media Query opcional para hacer el texto un poco más pequeño en móviles */
+@media (max-width: 600px) {
+  .seccion-elite h2 {
+    font-size: 1.8rem;
+  }
 }
